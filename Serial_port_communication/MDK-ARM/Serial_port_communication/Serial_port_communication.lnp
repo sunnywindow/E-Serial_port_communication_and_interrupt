@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"serial_port_communication\startup_stm32f103xe.o"
+"serial_port_communication\main.o"
+"serial_port_communication\gpio.o"
+"serial_port_communication\usart.o"
+"serial_port_communication\stm32f1xx_it.o"
+"serial_port_communication\stm32f1xx_hal_msp.o"
+"serial_port_communication\stm32f1xx_hal_gpio_ex.o"
+"serial_port_communication\stm32f1xx_hal_tim.o"
+"serial_port_communication\stm32f1xx_hal_tim_ex.o"
+"serial_port_communication\stm32f1xx_hal_uart.o"
+"serial_port_communication\stm32f1xx_hal.o"
+"serial_port_communication\stm32f1xx_hal_rcc.o"
+"serial_port_communication\stm32f1xx_hal_rcc_ex.o"
+"serial_port_communication\stm32f1xx_hal_gpio.o"
+"serial_port_communication\stm32f1xx_hal_dma.o"
+"serial_port_communication\stm32f1xx_hal_cortex.o"
+"serial_port_communication\stm32f1xx_hal_pwr.o"
+"serial_port_communication\stm32f1xx_hal_flash.o"
+"serial_port_communication\stm32f1xx_hal_flash_ex.o"
+"serial_port_communication\stm32f1xx_hal_exti.o"
+"serial_port_communication\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Serial_port_communication\Serial_port_communication.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Serial_port_communication.map" -o Serial_port_communication\Serial_port_communication.axf
